@@ -125,11 +125,6 @@ Segunda sección home
   font-size: 16px;
 }
 
-.contenedoCadaBTN img{
-  width:120px;
-  height:auto;
-}
-
 .titulosBTN{
   margin-top:10px;
 }
@@ -163,6 +158,12 @@ Segunda sección home
   width:20%;
   display:inline-block;
 }
+
+.contenedoCadaBTN img{
+  width:100px;
+  height:auto;
+}
+
 
 /********************
 Tercera sección Home
