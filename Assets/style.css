@@ -118,7 +118,6 @@ Segunda sección home
 ********************/
 
 .contenedoCadaBTN{
-  float:left;
   color:#fff;
   text-align:center;
   text-transform:uppercase;
@@ -138,62 +137,57 @@ Segunda sección home
 .btnNoticias{
   background-color:#b8b553;
   width:20%;
+  float:left;
 }
 
 .btnIdeacion{
   background-color:#0980c4;
   width:20%;
+  float:left;
 }
 
 .btnIncubadoraBDP{
   background-color:#32b5de;
   width:20%;
+  float:left;
 }
 
 .btnTransformacionDigital{
   background-color:#5fc1e5;
   width:20%;
+  float:left;
 }
 
 .btnEventos{
   background-color:#80cae8;
   width:20%;
+  display:inline-block;
 }
 
 /********************
 Tercera sección Home
 ********************/
-#seccionPresentacion .imgPresentacionImpactBdP, #seccionPresentacion .contenedorTextoPresentacionImpactBdP{
-  width:50%;
-  height:450px;
-  float: left;
-  color:#1E81C4;
-  font-size: 18px;
-}
-
-.imgPresentacionImpactBdP img{
-  width:100%;
-  height:450px;
-}
-
-.contenedorTextoPresentacionImpactBdP{
-  padding:8%;
-  background-color:#D9EDF4;
-}
-
-.tituloTextoPresentaciónImpactBdP{
-  text-transform:uppercase;
-  color:#1E81C4;
-}
-
-.tituloSeccionBDPImpact{
-  color:#1E81C4;
+.tituloBienvenidoBDP{
+  margin:4% 25% 3% 25%;
   text-align:center;
-  margin-top:5%;
+  font-size:35px;
+  font-weight: 550;
+  color:#546679;
+}
+
+.textoBienvenidoBDP{
+  margin:0% 10% 5% 10%;
+  text-align: justify;
+  font-size:18px;
+  color:#32B5DE;
+}
+
+#bienvenidosBDP img{
+  width:100%;
 }
 
 
->>>>>>> cce7ca6e6b8267200d229e01a0a6fd1fbe0a84e0
+
 @media screen and (max-width: 700px) {
   .slider .caption p {
     display: none;
