@@ -1,0 +1,221 @@
+/*Estilos generales banner home*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+body {
+  font-family: Open sans;
+}
+
+/* Contenedor de las diapositivas*/
+.slideshow {
+  width: 100%;
+  position: relative;
+}
+
+.slider li, ul {
+  width: 100%;
+}
+
+.slider li {
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.slider li img {
+  width: 100%;
+}
+
+/* Texto de las diapositivas*/
+.slider .caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 15px 50px;
+  /*Centrar*/
+  display: flex;
+  /*Posisionando textos en columnas*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  /*z-index: 1;*/
+}
+
+.slider .caption h1{
+  font-size: 50px;
+}
+
+.slider .caption p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+/* Puntos*/
+.pagination {
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.pagination li {
+  font-size: 20px;
+  margin: 2px 5px;
+  color: #858585;
+  cursor: pointer;
+}
+
+/*Flechas*/
+.left, .right {
+  position: absolute;
+  top: 40%;
+  height: 70px;
+  width:auto;
+  display: flex;
+  align-items: center;
+  color:#404040;
+  font-size: 50px;
+  cursor: pointer;
+  /*z-index: 2;*/
+  background: rgba(255, 255, 255, 0.5);
+  border-radius:10%;
+}
+
+.left:hover, .right:hover {
+  background: rgba(0,0,0,0.8);
+  color:#F9F9F9;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+
+/********************
+Segunda sección home
+********************/
+
+.contenedoCadaBTN{
+  float:left;
+  color:#fff;
+  text-align:center;
+  text-transform:uppercase;
+  padding: 2% 1px 1% 1px;
+  font-size: 16px;
+}
+
+.contenedoCadaBTN img{
+  width:120px;
+  height:auto;
+}
+
+.titulosBTN{
+  margin-top:10px;
+}
+
+.btnNoticias{
+  background-color:#b8b553;
+  width:20%;
+}
+
+.btnIdeacion{
+  background-color:#0980c4;
+  width:20%;
+}
+
+.btnIncubadoraBDP{
+  background-color:#32b5de;
+  width:20%;
+}
+
+.btnTransformacionDigital{
+  background-color:#5fc1e5;
+  width:20%;
+}
+
+.btnEventos{
+  background-color:#80cae8;
+  width:20%;
+}
+
+/********************
+Tercera sección Home
+********************/
+#seccionPresentacion .imgPresentacionImpactBdP, #seccionPresentacion .contenedorTextoPresentacionImpactBdP{
+  width:50%;
+  height:450px;
+  float: left;
+  color:#1E81C4;
+  font-size: 18px;
+}
+
+.imgPresentacionImpactBdP img{
+  width:100%;
+  height:450px;
+}
+
+.contenedorTextoPresentacionImpactBdP{
+  padding:8%;
+  background-color:#D9EDF4;
+}
+
+.tituloTextoPresentaciónImpactBdP{
+  text-transform:uppercase;
+  color:#1E81C4;
+}
+
+.tituloSeccionBDPImpact{
+  color:#1E81C4;
+  text-align:center;
+  margin-top:5%;
+}
+
+
+>>>>>>> cce7ca6e6b8267200d229e01a0a6fd1fbe0a84e0
+@media screen and (max-width: 700px) {
+  .slider .caption p {
+    display: none;
+  }
+  .slider .caption h1 {
+    font-size: 35px;
+  }
+  .lefth, .rigth {
+    font-size:30px;
+  }
+  .slider li img {
+    width: 100%;
+    position: center;
+  }
+  .btnNoticias, .btnIdeacion{
+    width:50%;
+  }
+  .btnIncubadoraBDP, .btnTransformacionDigital, .btnEventos{
+    width:33.33%;
+    height:200px;
+  }
+  .contenedorImagenPresentacion, .contenedorTextoPresentacion{
+    width:100%;
+  }
+}
