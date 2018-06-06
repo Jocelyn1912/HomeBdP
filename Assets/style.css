@@ -1,3 +1,7 @@
+/**************************************
+Estilos Home
+***************************************/
+
 /*Estilos generales banner home*/
 * {
   margin: 0;
@@ -36,6 +40,7 @@ body {
 
 .slider li img {
   width: 100%;
+margin-top:85px;
 }
 
 /* Texto de las diapositivas*/
@@ -66,6 +71,7 @@ body {
   font-size: 20px;
 }
 
+
 /* Puntos*/
 .pagination {
   position: absolute;
@@ -86,7 +92,7 @@ body {
 /*Flechas*/
 .left, .right {
   position: absolute;
-  top: 40%;
+  top: 50%;
   height: 70px;
   width:auto;
   display: flex;
@@ -122,11 +128,13 @@ Segunda sección home
   text-align:center;
   text-transform:uppercase;
   padding: 2% 1px 1% 1px;
-  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px!important;
+ height:200px;
 }
 
 .titulosBTN{
-  margin-top:10px;
+  margin-top:9px!important;
 }
 
 .btnNoticias{
@@ -162,6 +170,7 @@ Segunda sección home
 .contenedoCadaBTN img{
   width:100px;
   height:auto;
+vertical-align:bottom;
 }
 
 
@@ -171,9 +180,11 @@ Tercera sección Home
 .tituloBienvenidoBDP{
   margin:4% 25% 3% 25%;
   text-align:center;
-  font-size:35px;
-  font-weight: 550;
+  font-size:35px!important;
+  font-weight: 600;
   color:#546679;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 .textoBienvenidoBDP{
@@ -181,6 +192,7 @@ Tercera sección Home
   text-align: justify;
   font-size:18px;
   color:#32B5DE;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #bienvenidosBDP img{
@@ -192,13 +204,17 @@ Cuarta sección
 ******************/
 .textoVideoBPPImpact{
   display:inline-block;
-  width:32%;
+  width:30%;
   padding: 12% 5% 0% 5%;
   text-align:center;
   font-size:20px;
   color:#224363;
+  font-family: 'Montserrat', sans-serif;
+    vertical-align: top;
 }
-
+#my-video{
+width:69.7%!important;
+height:auto;}
 /******************
 Quinta sección
 ******************/
@@ -217,6 +233,9 @@ Quinta sección
   margin-bottom: 0px;
   padding-top:40px;
   padding-bottom:20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size:35px!important;
+  font-weight: 600;
 }
 
 .lineaTituloProyectos{
@@ -224,7 +243,7 @@ Quinta sección
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-top: 0.5px solid #91bfd8!important;
+  border-top: 1px solid #91bfd8!important;
 }
 
 hr {
@@ -239,7 +258,10 @@ hr {
   display:inline-block;
   margin-top: 5%;
   margin-bottom: 2%;
-  font-size: 20px;
+  font-size: 18px!important;
+  font-family: 'Montserrat', sans-serif;
+font-weight: 300 !important;
+
 }
 
 .proyectoBancarizate img, .proyectoCaptaciones img, .proyectoMinicreditos img{
@@ -256,6 +278,13 @@ hr {
   color:#fff;
   margin-top:7%;
 }
+
+/*Efecto  acercamiento títulos*/
+.proyectoBancarizate:hover p, .proyectoCaptaciones:hover p, .proyectoMinicreditos:hover p {
+        -webkit-transform:scale(1.3);
+        transform:scale(1.3);
+        transition:0.2s ease;
+      }
 
 @media screen and (max-width: 700px) {
   .slider .caption p {
@@ -275,10 +304,20 @@ hr {
     width:50%;
   }
   .btnIncubadoraBDP, .btnTransformacionDigital, .btnEventos{
-    width:33.33%;
-    height:200px;
+    width:33.33%;  
   }
   .contenedorImagenPresentacion, .contenedorTextoPresentacion{
     width:100%;
+  }
+  .textoVideoBPPImpact{
+    width:100%;
+  }
+  #my-video{
+    width:100%!important;
+  }
+  .proyectoBancarizate, .proyectoCaptaciones, .proyectoMinicreditos{
+    width:80%;
+    height: auto;
+    font-size: 18px!important;
   }
 }

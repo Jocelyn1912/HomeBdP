@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="Assets/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700" rel="stylesheet">
 </head>
 <body>
   <!-- contenedor banner -->
@@ -61,34 +62,34 @@
 
   <!-- Segunda sección botones -->
   <div class="seccionBotones">
-    <a href="javascript:void(0)">
+    <a href="/ct/c_e.bix" target="_blank">
       <div class="btnNoticias contenedoCadaBTN">
         <img src="https://d3jqq3cy6vtj1r.cloudfront.net/BDP/BDPHome/Imagenes/news.png" alt="" class="iconoNoticia">
         <p class="titulosBTN tituloNoticias">Noticias</p>
       </div>
     </a>
-    <a href="javascript:void(0)">
+    <a href="javascript:void(0)" target="_blank">
       <div class="btnIdeacion contenedoCadaBTN">
         <img src="https://d3jqq3cy6vtj1r.cloudfront.net/BDP/BDPHome/Imagenes/desafio.png" alt="" class="iconoIdeacion">
-        <p class="titulosBTN tituloNoticias">Ideación</p>
+        <p class="titulosBTN tituloIdeacion">Ideación</p>
       </div>
     </a>
-    <a href="javascript:void(0)">
+    <a href="javascript:void(0)" target="_blank">
         <div class="btnIncubadoraBDP contenedoCadaBTN">
         <img src="https://d3jqq3cy6vtj1r.cloudfront.net/BDP/BDPHome/Imagenes/incubacion.png" alt="" class="iconoIncubadoraBDP">
-        <p class="titulosBTN tituloNoticias">Incubadora BDP</p>
+        <p class="titulosBTN tituloIncubadora">Incubadora BDP</p>
       </div>
     </a>
-    <a href="javascript:void(0)">
+    <a href="javascript:void(0)" target="_blank">
       <div class="btnTransformacionDigital contenedoCadaBTN">
         <img src="https://d3jqq3cy6vtj1r.cloudfront.net/BDP/BDPHome/Imagenes/transformaciondigital.png" alt="" class="iconoTransformacionDigital">
-        <p class="titulosBTN tituloNoticias">Transformación Digital</p>
+        <p class="titulosBTN tituloTransformacion">Transformación Digital</p>
       </div>
     </a>
-    <a href="javascript:void(0)">
+    <a href="javascript:void(0)" target="_blank">
       <div class="btnEventos contenedoCadaBTN">
         <img src="https://d3jqq3cy6vtj1r.cloudfront.net/BDP/BDPHome/Imagenes/eventos.png" alt="" class="iconoEventos">
-        <p class="titulosBTN tituloNoticias">Eventos</p>
+        <p class="titulosBTN tituloEventos">Eventos</p>
       </div>
     </a>
   </div>
@@ -102,7 +103,6 @@
     </div>
     <img src="https://d3jqq3cy6vtj1r.cloudfront.net/BDP/BDPHome/Imagenes/fondoSecci%C3%B3nBienvenidoAbajo.png" alt="">
   </div>
-
   <!-- Cuarta Sección video ¿De qué se trata bdp impact? -->
   <div id="videoBDPImpact">
     <video id="my-video" class="video-js" controls="" width="900px" poster="https://d3jqq3cy6vtj1r.cloudfront.net/BDP/Videos/PresentacionImpactPortada.jpg" data-setup="{}" style="display:inline-block;">
@@ -116,24 +116,31 @@
     <h2 class="tituloProyectosEnIncubacion .lineaTituloProyectos">Proyectos en incubación</h2>
     <hr class="lineaTituloProyectos">
     <div class="proyectoBancarizate">
-      <a href="javascript:void(0)">
-        <img src="https://d3jqq3cy6vtj1r.cloudfront.net/BDP/BDPHome/Imagenes/bancarizate.png" alt="Imagen Bancarízate">
+      <a href="/bancarzate" target="_blank">
+        <img class="imagenImg" src="https://d3jqq3cy6vtj1r.cloudfront.net/BDP/BDPHome/Imagenes/bancarizate.png" alt="Imagen Bancarízate">
         <p>BANCARÍZATE</p>
       </a>
     </div>
-    <div class="proyectoCaptaciones">
+    <div class="proyectoCaptaciones" target="_blank">
       <a href="javascript:void(0)">
         <img src="https://d3jqq3cy6vtj1r.cloudfront.net/BDP/BDPHome/Imagenes/captaciones.png" alt="imagen Captación">
         <p>CAPTACIONES</p>
       </a>
     </div>
-    <div class="proyectoMinicreditos">
+    <div class="proyectoMinicreditos" target="_blank">
       <a href="javascript:void(0)">
         <img src="https://d3jqq3cy6vtj1r.cloudfront.net/BDP/BDPHome/Imagenes/minicreditos.png" alt="Imagen Minicreditos">
         <p>MINICRÉDITOS</p>
       </a>
     </div>
   </div>
+  <style>
+      .proyectoBancarizate:hover p, .proyectoCaptaciones:hover p, .proyectoMinicreditos:hover p, .btnNoticias:hover p, .btnIdeacion:hover p, .btnIncubadoraBDP:hover p, .btnTransformacionDigital:hover p, .btnEventos:hover p{
+        -webkit-transform:scale(1.3);
+        transform:scale(1.3);
+        transition:0.2s ease;
+      }
+      </style>
 
 
 
