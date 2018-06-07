@@ -212,9 +212,12 @@ Cuarta sección
   font-family: 'Montserrat', sans-serif;
   vertical-align: top;
 }
+
 #my-video{
-width:69.7%!important;
-height:auto;}
+  width:69.7%!important;
+  height:auto;
+}
+
 /******************
 Quinta sección
 ******************/
@@ -260,8 +263,7 @@ hr {
   margin-bottom: 2%;
   font-size: 18px!important;
   font-family: 'Montserrat', sans-serif;
-font-weight: 300 !important;
-
+  font-weight: 300 !important;
 }
 
 .proyectoBancarizate img, .proyectoCaptaciones img, .proyectoMinicreditos img{
@@ -279,12 +281,83 @@ font-weight: 300 !important;
   margin-top:7%;
 }
 
-/*Efecto  acercamiento títulos*/
+/*Efecto acercamiento títulos*/
 .proyectoBancarizate:hover p, .proyectoCaptaciones:hover p, .proyectoMinicreditos:hover p, .btnNoticias:hover p, .btnIdeacion:hover p, .btnIncubadoraBDP:hover p, .btnTransformacionDigital:hover p, .btnEventos:hover p{
   -webkit-transform:scale(1.2);
   transform:scale(1.2);
   transition:0.2s ease;
 }
+
+/******************
+Sexta sección
+******************/
+.contenedorCuatroNovedadesBDP{
+  margin-left:6%;
+}
+
+
+.tituloNovedadesBDP{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top:40px;
+  padding-bottom:20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size:35px!important;
+  font-weight: 600;
+  text-align:center;
+  color:#4489C1;
+}
+
+.lineaTituloNovedadesBDP{
+  width:30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 1px solid #91bfd8!important;
+  color:#546679;
+}
+
+hr {
+  margin-top: 0px!important;
+  margin-bottom: 0px!important;
+}
+
+.contenedorNovedadesTalks, .contenedorNovedadesInnovacion, .contenedorNovedadesOnboard, .contenedorNovedadesPremios{
+  width:20%;
+  display:inline-block;
+  margin:2%;
+    background-color:#1080C1;
+}
+
+.contenedorNovedadesTalks a:link, .contenedorNovedadesInnovacion a:link, .contenedorNovedadesOnboard a:link,.contenedorNovedadesPremios a:link{
+  text-decoration:none;
+}
+
+.contenedorNovedadesTalks img, .contenedorNovedadesInnovacion img, .contenedorNovedadesOnboard img,.contenedorNovedadesPremios img{
+  width:100%;
+  height:auto;
+}
+
+.contenedorNovedadesTalks h3, .contenedorNovedadesInnovacion h3, .contenedorNovedadesOnboard h3,.contenedorNovedadesPremios h3{
+  background-image:url(https://d3jqq3cy6vtj1r.cloudfront.net/BDP/BDPHome/Imagenes/foco-titlenoticias.png);
+  color:#fff;
+  margin:0!important;
+  font-family: 'Montserrat', sans-serif;
+  height:55px;
+  vertical-align: middle;
+  padding:2% 15%;
+  font-size:20px;
+}
+
+.contenedorNovedadesTalks p, .contenedorNovedadesInnovacion p, .contenedorNovedadesOnboard p,.contenedorNovedadesPremios p{
+  background-color:#32B5DE;
+  color:#fff;
+  padding:10px;
+  margin:0!important;
+  font-family: 'Montserrat', sans-serif;
+  height:55px;
+}
+
 
 @media screen and (max-width: 700px) {
   .slider .caption p {
